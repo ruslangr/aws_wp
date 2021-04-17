@@ -9,7 +9,7 @@ services:
       - wp_data:/var/www/html/
     restart: always
     environment:
-      WORDPRESS_DB_HOST: localhost:3306
+      WORDPRESS_DB_HOST: 10.0.1.54:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
