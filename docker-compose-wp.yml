@@ -6,7 +6,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - wp_data:/var/www/html/
+      - /mnt/efs/fs1:/var/www/html/
     restart: always
     environment:
       WORDPRESS_DB_HOST: 10.0.1.54:3306
